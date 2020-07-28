@@ -28,7 +28,7 @@ namespace AnimalShelter.Controllers
     [HttpPost]
     public ActionResult Create(Animal animal)
     {
-      _db.Animals.Add(animal)
+      _db.Animals.Add(animal);
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
