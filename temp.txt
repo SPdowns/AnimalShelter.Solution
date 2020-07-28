@@ -1,0 +1,11 @@
++------------------+--------------+------+-----+---------+----------------+
+| Field            | Type         | Null | Key | Default | Extra          |
++------------------+--------------+------+-----+---------+----------------+
+| AnimalId         | int          | NO   | PRI | NULL    | auto_increment |
+| Name             | varchar(255) | YES  |     | NULL    |                |
+| Gender           | varchar(255) | YES  |     | NULL    |                |
+| Breed            | varchar(255) | YES  |     | NULL    |                |
+| Type             | varchar(255) | YES  |     | NULL    |                |
+| FavoriteBand     | varchar(255) | YES  |     | NULL    |                |
+| DateOfAdmittance | date         | YES  |     | NULL    |                |
++------------------+--------------+------+-----+---------+----------------+

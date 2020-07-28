@@ -1,6 +1,6 @@
 namespace AnimalShelter.Models
 {
-  public class Object
+  public class Animals
   {
     
   }
