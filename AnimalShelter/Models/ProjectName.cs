@@ -1,4 +1,4 @@
-namespace ProjectName.Models
+namespace AnimalShelter.Models
 {
   public class Object
   {

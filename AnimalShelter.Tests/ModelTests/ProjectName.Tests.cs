@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ProjectName.Models;
+using AnimalShelter.Models;
 
-namespace ProjectName.Tests
+namespace AnimalShelter.Tests
 {
   [TestClass]
   public class ClassNameTests
