@@ -18,7 +18,7 @@
   @Html.LabelFor(model => model.FavoriteBand)
   @Html.TextBoxFor(model => model.FavoriteBand)
   @Html.LabelFor(model => model.DateOfAdmittance)
-  @Html.TextBoxFor(model => model.DateOfAdmittance)
+  @Html.TextBoxFor(model => model.DateOfAdmittance, new { @type = "date" })
 
   <input type="submit" value="Add A New Animal">
 }
