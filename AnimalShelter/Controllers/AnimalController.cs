@@ -1,15 +1,16 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using AnimalShelter.Models;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace AnimalShelter.Controllers
 {
-  public class AnimalsController : Controller
+  public class AnimalController : Controller
   {
     private readonly AnimalShelterContext _db;
 
-    public AnimalsController(AnimalShelterContext db)
+    public AnimalController(AnimalShelterContext db)
     {
       _db = db;
     }
