@@ -6,18 +6,20 @@ using System.Linq;
 
 namespace AnimalShelter.Controllers
 {
-  public class AnimalController : Controller
+  public class AnimalsController : Controller
   {
     private readonly AnimalShelterContext _db;
 
-    public AnimalController(AnimalShelterContext db)
+    public AnimalsController(AnimalShelterContext db)
     {
       _db = db;
     }
 
     public ActionResult Index()
     {
+      
       List<Animal> model = _db.Animals.ToList();
+      model.Sort((x,y) => x.Name.CompareTo(y.Name));
       return View(model);
     }
 
