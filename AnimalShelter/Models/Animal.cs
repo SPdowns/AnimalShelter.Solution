@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using MySql.Data.MySqlClient;
 
@@ -11,6 +12,6 @@ namespace AnimalShelter.Models
     public string Breed { get; set; }
     public string Type { get; set; }
     public string FavoriteBand { get; set; }
-    public date DateOfAdmittance { get; set; }
+    public DateTime DateOfAdmittance { get; set; }
   }
 }

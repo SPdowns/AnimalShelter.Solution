@@ -1,8 +1,10 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using AnimalShelter.Models;
 
 namespace AnimalShelter
 {
@@ -12,7 +14,7 @@ namespace AnimalShelter
     {
       var builder = new ConfigurationBuilder()
           .SetBasePath(env.ContentRootPath)
-          .AddJsonFile("appsettings.json")
+          .AddJsonFile("appsettings.json");
       Configuration = builder.Build();
     }
 

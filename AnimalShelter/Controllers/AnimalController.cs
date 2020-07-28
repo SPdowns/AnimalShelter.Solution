@@ -5,13 +5,13 @@ using System.Linq;
 
 namespace AnimalShelter.Controllers
 {
-  public class AnimalsControler : Controller
+  public class AnimalsController : Controller
   {
-    private readonly AnimalShelterContext _dB;
+    private readonly AnimalShelterContext _db;
 
-    public AnimalsController(AnimalShelterContext dB)
+    public AnimalsController(AnimalShelterContext db)
     {
-      _dB = db;
+      _db = db;
     }
 
     public ActionResult Index()
